@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>320</width>
+    <height>30</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLabel#label_robot_ico[robotStatusProperty=&quot;false&quot;]{
+	background-color: red;
+}
+QLabel#label_robot_ico[robotStatusProperty=&quot;true&quot;]{
+	background-color: green;
+}
+
+QLabel#label_comm_ico[signalStrength=&quot;0&quot;]{
+	background-color: red;
+}
+QLabel#label_comm_ico[signalStrength=&quot;1&quot;]{
+	background-color: gray;
+}
+QLabel#label_comm_ico[signalStrength=&quot;2&quot;]{
+	background-color: green;
+}
+
+QLabel#label_label_ico1[labelStatusProperty=&quot;0&quot;],
+QLabel#label_label_ico2[labelStatusProperty=&quot;0&quot;]{
+	background-color: gray;
+}
+QLabel#label_label_ico1[labelStatusProperty=&quot;11&quot;],
+QLabel#label_label_ico1[labelStatusProperty=&quot;12&quot;],
+QLabel#label_label_ico2[labelStatusProperty=&quot;11&quot;],
+QLabel#label_label_ico2[labelStatusProperty=&quot;12&quot;]{
+	background-color: green;
+}
+QLabel#label_label_ico1[labelStatusProperty=&quot;1&quot;],
+QLabel#label_label_ico1[labelStatusProperty=&quot;2&quot;],
+QLabel#label_label_ico2[labelStatusProperty=&quot;1&quot;],
+QLabel#label_label_ico2[labelStatusProperty=&quot;2&quot;]{
+	background-color: yellow;
+}</string>
+  </property>
+  <widget class="QLabel" name="label_robot_ico">
+   <property name="geometry">
+    <rect>
+     <x>2</x>
+     <y>7</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="robotStatusProperty" stdset="0">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_robot_tip">
+   <property name="geometry">
+    <rect>
+     <x>19</x>
+     <y>7</y>
+     <width>80</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>机器人:已连接</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_comm_ico">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>7</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="signalStrength" stdset="0">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_comm_tip">
+   <property name="geometry">
+    <rect>
+     <x>127</x>
+     <y>7</y>
+     <width>60</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>连接:差</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_label_ico1">
+   <property name="geometry">
+    <rect>
+     <x>197</x>
+     <y>7</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="labelStatusProperty" stdset="0">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_label_tip">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>7</y>
+     <width>80</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>标签:不可添加</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_label_ico2">
+   <property name="geometry">
+    <rect>
+     <x>214</x>
+     <y>7</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="labelStatusProperty" stdset="0">
+    <number>12</number>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>104</x>
+     <y>5</y>
+     <width>2</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>188</x>
+     <y>5</y>
+     <width>2</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

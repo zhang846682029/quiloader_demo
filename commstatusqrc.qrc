@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/cloud269.png</file>
+        <file>images/green_new.png</file>
+        <file>images/publish.png</file>
+        <file>images/wifi64.png</file>
+    </qresource>
+</RCC>
